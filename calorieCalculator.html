@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="calorieCalculator.css">
+	<link rel="icon" href="Images/calculator.ico">
+	<title>Calorie Intake</title>
+</head>
+<body>
+	<div>
+	<main>
+		<h1>Calorie Intake Calculator</h1>
+		<p id="p">Imperial BMR</p>
+				<table id="table">
+			<tr>
+				<td>Gender:</td>
+				<td><input type="text" name="gender" placeholder="Male or Female" size="10em" id="gender"></td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Age:</td>
+				<td><input type="text" name="age" maxlength="3" id="age" required size="4em"></td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Pounds:</td>
+				<td><input type="text" name="feet" size="4em" id="pounds" required></td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Inches:</td>
+				<td><input type="text" name="inches" size="4em" id="inches"></td>
+			</tr>			
+			<tr>
+				<td>&nbsp;</td>
+			</tr>	
+			<tr>
+				<td>Activity: </td>
+				<td><input type="text" name="level" size="15px" id="level" placeholder="Low - Medium - High"></td>
+			</tr>			
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="button" name="calculate" value="Calculate" id="calculate"></td>
+				<td>&nbsp;</td>
+			</tr>				
+			<tr>
+				<td>&nbsp;</td>
+				<td><p id="calories">&nbsp;</p></td>
+			</tr>
+		</table>
+		<p id="p1">Metric BMR</p>
+				<table id="table1">
+			<tr>
+				<td>Gender:</td>
+				<td><input type="text" name="gender" placeholder="Male or Female" size="10em" id="gender2"></td>
+				<input type="checkbox" name="maleGender" id="maleOption" value="Male">
+				<label for="maleOpt">Male</label>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Age:</td>
+				<td><input type="text" name="age" maxlength="3" id="age" required size="4em"></td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Kg:</td>
+				<td><input type="text" name="feet" size="4em" id="kilograms" required></td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr>
+				<td>Cm:</td>
+				<td><input type="text" name="inches" size="4em" id="centimeters"></td>
+			</tr>			
+			<tr>
+				<td>&nbsp;</td>
+			</tr>	
+			<tr>
+				<td>Activity: </td>
+				<td><input type="text" name="level" size="15px" id="level2" placeholder="Low - Medium - High"></td>
+			</tr>			
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="button" name="calculate" value="Calculate" id="calculateMetric"></td>
+				<td>&nbsp;</td>
+			</tr>				
+			<tr>
+				<td>&nbsp;</td>
+				<td><p id="metricCalories">&nbsp;</p></td>
+			</tr>
+		</table>									
+	</main>
+	<footer>&copy; Copyright All Rights Reserved - Johan Fernando Lema -</footer>
+</div>
+<script type="text/javascript" src="calorieCalculator.js"></script>
+</body>
+</html>
